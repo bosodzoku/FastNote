@@ -4,8 +4,9 @@
         <attribute name="date" attributeType="String" syncable="YES"/>
         <attribute name="important" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Notes" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Notes" positionX="-63" positionY="-18" width="128" height="105"/>
     </elements>
 </model>

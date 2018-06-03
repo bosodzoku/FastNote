@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0B42A3C20C3F04700310935 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B42A3B20C3F04700310935 /* DetailsViewController.swift */; };
+		E0B42A3E20C408F800310935 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0B42A3D20C408F800310935 /* Default-568h@2x.png */; };
 		E0C77FF920905989005EB4EC /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C77FF820905989005EB4EC /* AddViewController.swift */; };
 		E0CB0042208FA93F00D1748E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CB0041208FA93F00D1748E /* AppDelegate.swift */; };
 		E0CB0047208FA93F00D1748E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0CB0045208FA93F00D1748E /* Main.storyboard */; };
@@ -14,10 +16,11 @@
 		E0CB004C208FA93F00D1748E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0CB004B208FA93F00D1748E /* Assets.xcassets */; };
 		E0CB004F208FA93F00D1748E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0CB004D208FA93F00D1748E /* LaunchScreen.storyboard */; };
 		E0CB0059208FC7AF00D1748E /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CB0058208FC7AF00D1748E /* NoteTableViewController.swift */; };
-		E0CB005B208FD5A600D1748E /* FN.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CB005A208FD5A600D1748E /* FN.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E0B42A3B20C3F04700310935 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E0B42A3D20C408F800310935 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E0C77FF820905989005EB4EC /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		E0CB003E208FA93F00D1748E /* Fast Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fast Note.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0CB0041208FA93F00D1748E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +30,6 @@
 		E0CB004E208FA93F00D1748E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0CB0050208FA93F00D1748E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0CB0058208FC7AF00D1748E /* NoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
-		E0CB005A208FD5A600D1748E /* FN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FN.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		E0CB0035208FA93F00D1748E = {
 			isa = PBXGroup;
 			children = (
+				E0B42A3D20C408F800310935 /* Default-568h@2x.png */,
 				E0CB0040208FA93F00D1748E /* Fast Note */,
 				E0CB003F208FA93F00D1748E /* Products */,
 			);
@@ -67,8 +70,8 @@
 				E0CB004D208FA93F00D1748E /* LaunchScreen.storyboard */,
 				E0CB0050208FA93F00D1748E /* Info.plist */,
 				E0CB0048208FA93F00D1748E /* Fast_Note.xcdatamodeld */,
-				E0CB005A208FD5A600D1748E /* FN.swift */,
 				E0C77FF820905989005EB4EC /* AddViewController.swift */,
+				E0B42A3B20C3F04700310935 /* DetailsViewController.swift */,
 			);
 			path = "Fast Note";
 			sourceTree = "<group>";
@@ -100,7 +103,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Peter Iontsev";
 				TargetAttributes = {
 					E0CB003D208FA93F00D1748E = {
@@ -133,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0CB004F208FA93F00D1748E /* LaunchScreen.storyboard in Resources */,
+				E0B42A3E20C408F800310935 /* Default-568h@2x.png in Resources */,
 				E0CB004C208FA93F00D1748E /* Assets.xcassets in Resources */,
 				E0CB0047208FA93F00D1748E /* Main.storyboard in Resources */,
 			);
@@ -149,7 +153,7 @@
 				E0CB0059208FC7AF00D1748E /* NoteTableViewController.swift in Sources */,
 				E0CB004A208FA93F00D1748E /* Fast_Note.xcdatamodeld in Sources */,
 				E0CB0042208FA93F00D1748E /* AppDelegate.swift in Sources */,
-				E0CB005B208FD5A600D1748E /* FN.swift in Sources */,
+				E0B42A3C20C3F04700310935 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +193,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -196,6 +201,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -223,7 +229,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -246,6 +252,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -253,6 +260,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -274,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

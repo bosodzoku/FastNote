@@ -7,11 +7,11 @@
 //
 
 import UIKit
+import UserNotifications
 
 class AddViewController: UIViewController {
     
     var targetVC = NoteTableViewController()
-    var selectedNote = FN()
     
     @IBOutlet weak var titleTextField: UITextView!
     @IBOutlet weak var importantSwitch: UISwitch!
@@ -41,6 +41,29 @@ class AddViewController: UIViewController {
         self.view.endEditing(true)
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

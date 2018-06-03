@@ -9,27 +9,23 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
-
+    var previousVC = NoteTableViewController()
+    var selectedNote: Notes?
+    
+    @IBOutlet weak var detailsLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    @IBAction func completeButton(_ sender: UIButton) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            if let theFastNote = selectedNote {
+                context.delete(theFastNote)
+                navigationController?.popViewController(animated: true)
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        detailsLabel.text = selectedNote?.name
+        timeLabel.text = selectedNote?.date
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

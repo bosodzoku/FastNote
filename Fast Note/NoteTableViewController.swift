@@ -46,9 +46,20 @@ class NoteTableViewController: UITableViewController {
         }
         return cell
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let fastNote = fastNotes[indexPath.row]
+        performSegue(withIdentifier: "moveToDetails", sender: fastNote)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let addVC = segue.destination as! AddViewController
-        addVC.targetVC = self
+        if let addVC = segue.destination as? AddViewController {
+            addVC.targetVC = self
+        }
+        if let completeVC = segue.destination as? DetailsViewController {
+            if let fastNote = sender as? Notes {
+                completeVC.selectedNote = fastNote
+                completeVC.previousVC = self
+            }
+        }
     }
     //this is for deleting cells as well as entities from CoreData DB
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
